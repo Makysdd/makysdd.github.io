@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>主题帮助</title>
+    <url>/2020/03/theme-help/</url>
+    <content><![CDATA[<p>目前使用的主题有一些“特异功能”，为了避免每次都去官网查，这里把特异功能罗列出来。</p>
+<h2><span id="信息框">信息框</span></h2><p><del>想起了mediawiki</del></p>
+<div class="note default">
+            <h3><span id="标题">标题</span></h3><p>内容</p>
+          </div>
+<pre><code>灰{%note default%}
+蓝{%note info%}
+紫{%note primary%}
+绿{%note success%}
+黄{%note warning%}
+红{%note danger%}
+{%endnote%}
+
+{%note default%}
+### 标题
+内容
+{%endnote%}</code></pre><h2><span id="label-tag累不塔基">Label tag<del>累不塔基</del></span></h2><span class="label default">山川</span><span class="label primary">异域</span>，<span class="label default">风月</span><span class="label success">同钉</span>。
+<span class="label info">岂曰</span><span class="label danger">无课</span>，<span class="label warning">与子</span><mark>同钉</mark>。
+<pre><code>{%label @山川%}{%label primary@异域%}，{%label default@风月%}{%label success@同钉%}。
+{%label info@岂曰%}{%label danger@无课%}，{%label warning@与子%}&lt;mark&gt;同钉&lt;/mark&gt;。</code></pre><h2><span id="按钮">按钮</span></h2><a class="btn" href="#url" title="title">按钮</a>
+<a class="btn" href="#url"><i class="fa fa-hand-o-right"></i>图标按钮</a>
+<a class="btn" href="#url"><i class="fa fa-hand-o-right fa-fw"></i>固定长度</a>
+<pre><code>{%btn #url,按钮,,title%}
+{%btn #url,图标按钮,hand-o-right%}
+{%btn #url,固定长度,hand-o-right fa-fw%}</code></pre><h2><span id="引语">引语</span></h2><blockquote class="blockquote-center"><p> 我实在没有说过这样一句话。<br><strong>——鲁迅</strong> </p>
+</blockquote>
+<pre><code>{%cq%} something {%endcq%}</code></pre><h2><span id="视频">视频</span></h2><pre><code>{% video url %}</code></pre>]]></content>
+      <categories>
+        <category>网站管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>学习资源仓库</title>
+    <url>/2020/03/study-hub/</url>
+    <content><![CDATA[<div class="note info">
+            <h3><span id="注意">注意</span></h3><p>这原来是一个网站，现在作为一个网站的文章呈现。该项目已停止，本页内容已失效。部分链接有效。</p>
+          </div>
+
+<p>此网站主要发布万州二中网课的学习资源及胶囊二维码。<strong>不是官方发布处。</strong></p>
+<h2><span id="直播课回放">直播课回放</span></h2><p>由于手机看直播回放时无法横屏，以及各种不爽还有有时化学冉某某讲的贼快还没有回放，所以我把直播课都录屏下来，上传到网上。可能是化学直播课有视频的缘故，有时化学直播在电脑上无法正常观看。有的化学回放的声音和图像是分开的，或只有两者之一。</p>
+<hr>
+<h4><span id="物理">【物理】</span></h4><p>物理在b站的直播有官方录播。<a href="https://space.bilibili.com/391912241/" target="_blank" rel="noopener">点我</a></p>
+<hr>
+<h4><span id="物理以外">【物理以外】</span></h4><p><a href="https://www.lanzous.com/b00z86wfc" target="_blank" rel="noopener">我</a></p>
+<p>密码：cxp4</p>
+<p><b>需要注意的是</b>，由于蓝奏云的限制，mp4文件被压缩为了zip文件。如果你只有手机并且打不开zip文件，请<a href="https://www.coolapk.com/apk/com.estrongs.android.pop" target="_blank" rel="noopener">下载这个app</a>。</p>
+<h2><span id="电子书">电子书</span></h2><p>电子书只发布<del>我认为</del>最重要的几本，如果要其他的书请联系我。</p>
+<p><a href="https://www.lanzous.com/b00z7pofc" target="_blank" rel="noopener">点击这里</a></p>
+<p>密码：94d0</p>
+<h2><span id="支持我">支持我</span></h2><p>如果觉得这个网站很有用，就把他分享给别人吧！</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2020/03/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2><span id="quick-start">Quick Start</span></h2><h3><span id="create-a-new-post">Create a new post</span></h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3><span id="run-server">Run server</span></h3><pre><code class="bash">$ hexo server</code></pre>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3><span id="generate-static-files">Generate static files</span></h3><pre><code class="bash">$ hexo generate</code></pre>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3><span id="deploy-to-remote-sites">Deploy to remote sites</span></h3><pre><code class="bash">$ hexo deploy</code></pre>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+  </entry>
+</search>

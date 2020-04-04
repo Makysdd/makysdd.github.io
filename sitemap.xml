@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://localhost:4000/2020/04/get_b_and_w/</loc>
+    
+    <lastmod>2020-04-04T10:04:03.602Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://localhost:4000/2020/03/theme-help/</loc>
     
-    <lastmod>2020-03-31T01:21:35.063Z</lastmod>
+    <lastmod>2020-04-03T11:47:17.472Z</lastmod>
     
   </url>
   

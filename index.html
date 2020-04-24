@@ -1,316 +1,1075 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
-  <meta name="robots" content="noindex">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="theme-color" content=#58b77a>
-  <title>又一个Hexo网站</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Makys">
-  <meta name="keywords" content="">
-  <meta name="description" content="我正在建设这个Hexo网站。继续加油！">
-  <script id="hexo-configurations">
-  var CONFIG = {
-    root: '/',
-    theme: 'lx',
-    version: '0.3.9',
-    localsearch:{
-      "enable": true,
-      "trigger": "auto",
-      "top_n_per_article": 1,
-      "unescape": false,
-      "preload": false
-      },
-    path: 'search.xml'
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <link rel="manifest" href="/images/manifest.json">
+  <meta name="msapplication-config" content="/images/browserconfig.xml">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto Sans SC:300,300italic,400,400italic,700,700italic|Noto Serif SC:300,300italic,400,400italic,700,700italic|Source Code Pro:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"makysdd.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"buttons","active":"valine","storage":false,"lazyload":true,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="世界那么大，我想去看看。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Makys的博客">
+<meta property="og:url" content="http://makysdd.github.io/index.html">
+<meta property="og:site_name" content="Makys的博客">
+<meta property="og:description" content="世界那么大，我想去看看。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Makys">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://makysdd.github.io/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
   };
 </script>
 
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/theme-lx@0.3.9/source/css/main.min.css">
-  <style type="text/css">
-    pre,
-    code {
-      font-family: 'Fira Code', monospace;
-    }
-    html {
-      font-family: sans-serif;
-    }
-    body {
-      font-family: sans-serif;
-    }
-    h1, h2, h3, h4, h5, figure {
-      font-family: sans-serif;
-    }
-    .menu-container{
-      font-family: sans-serif;
-    }
-  </style>
+  <title>Makys的博客</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153163670-2"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-153163670-2');
+      }
+    </script>
 
-  <script src="//cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/theme-lx@0.3.9/source/js/jquery.jside.menu.js"></script>
-	<script>
-	$(document).ready(function(){
-	$(".menu-container").jSideMenu({
-	    jSidePosition: "position-right",
-	    jSideSticky: true,
-	    jSideSkin: "greenish",
-	     });
-	}); 
-	</script>
-  <!--Google_Analytics-->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153163670-2"></script>
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Makys的博客" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Makys的博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">建设中</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-guestbook">
+
+    <a href="/guestbook/" rel="section"><i class="fa fa-address-book fa-fw"></i>留言板</a>
+
+  </li>
+        <li class="menu-item menu-item-test">
+
+    <a href="/test/" rel="section"><i class="fa fa-vials fa-fw"></i>测试</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索支持" spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://makysdd.github.io/2020/04/misheard-dejavu.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Makys">
+      <meta itemprop="description" content="世界那么大，我想去看看。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Makys的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/04/misheard-dejavu.html" class="post-title-link" itemprop="url">逮虾户(Déjà Vu)空耳</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发布</span>
+
+              <time title="创建时间：2020-04-07 10:35:49" itemprop="dateCreated datePublished" datetime="2020-04-07T10:35:49+08:00">2020-04-07</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新</span>
+                <time title="最后修改时间：2020-04-14 10:48:59" itemprop="dateModified" datetime="2020-04-14T10:48:59+08:00">2020-04-14</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%90%9E%E7%AC%91/" itemprop="url" rel="index"><span itemprop="name">搞笑</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2020/04/misheard-dejavu.html" class="post-meta-item leancloud_visitors" data-flag-title="逮虾户(Déjà Vu)空耳" title="阅读">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/04/misheard-dejavu.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/04/misheard-dejavu.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">字数：</span>
+              <span>1.2k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <div class="note">
+    <p>
+        <span>Bilibili视频：</span><span>BV18t411D7bT</span>
+	<br>
+        <a class="btn" href="javascript:BV18t411D7bT();">博客内观看</a>
+        <a class="btn" href="//www.bilibili.com/video/BV18t411D7bT" target="_blank" rel="noopener">Bilibili观看</a>
+	<br>
+        Bilibili视频块仍在完善，目前我更推荐用Bilibili观看。
+    </p>
+    <div id="BV18t411D7bT" style=""></div>
+</div>
+<script>function BV18t411D7bT(){
+	document.getElementById("BV18t411D7bT").innerHTML ="<iframe src=\"//player.bilibili.com/player.html?bvid=BV18t411D7bT&page=1\" scrolling=\"no\" border=\"0\" frameborder=\"no\" framespacing=\"0\" allowfullscreen=\"true\" style=\"height=500px;\"></iframe>";
+}</script>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/04/misheard-dejavu.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://makysdd.github.io/2020/04/misheard-hop.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Makys">
+      <meta itemprop="description" content="世界那么大，我想去看看。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Makys的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/04/misheard-hop.html" class="post-title-link" itemprop="url">Hop空耳</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发布</span>
+
+              <time title="创建时间：2020-04-06 12:39:49" itemprop="dateCreated datePublished" datetime="2020-04-06T12:39:49+08:00">2020-04-06</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新</span>
+                <time title="最后修改时间：2020-04-21 08:26:41" itemprop="dateModified" datetime="2020-04-21T08:26:41+08:00">2020-04-21</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%90%9E%E7%AC%91/" itemprop="url" rel="index"><span itemprop="name">搞笑</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2020/04/misheard-hop.html" class="post-meta-item leancloud_visitors" data-flag-title="Hop空耳" title="阅读">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/04/misheard-hop.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/04/misheard-hop.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">字数：</span>
+              <span>688</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <div class="tabs" id="fourth-unique-name"><ul class="nav-tabs"><li class="tab active"><a href="#fourth-unique-name-1">警告页</a></li><li class="tab"><a href="#fourth-unique-name-2">内容页</a></li></ul><div class="tab-content"><div class="tab-pane active" id="fourth-unique-name-1"><div class="note danger">
+            <p>本页面好像包含R18内容，请确保你年满18岁再点击右上角“内容页”查看。</p>
+          </div></div><div class="tab-pane" id="fourth-unique-name-2"><div class="note">
+    <p>
+        <span>Bilibili视频：</span><span>BV17x411w7KC</span>
+    <br>
+        <a class="btn" href="javascript:BV17x411w7KC();">博客内观看</a>
+        <a class="btn" href="//www.bilibili.com/video/BV17x411w7KC" target="_blank" rel="noopener">Bilibili观看</a>
+    <br>
+        Bilibili视频块仍在完善，目前我更推荐用Bilibili观看。
+    </p>
+    <div id="BV17x411w7KC" style=""></div>
+</div>
+<script>function BV17x411w7KC(){
+    document.getElementById("BV17x411w7KC").innerHTML ="<iframe src=\"//player.bilibili.com/player.html?bvid=BV17x411w7KC&page=1\" scrolling=\"no\" border=\"0\" frameborder=\"no\" framespacing=\"0\" allowfullscreen=\"true\" style=\"height=500px;\"></iframe>";
+}</script>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line">辣妹儿，辣妹儿</span><br><span class="line">法克儿，法克儿，辣妹儿</span><br><span class="line"></span><br><span class="line">你摸我，你就是那老屎蛋</span><br><span class="line">baby，你也是那老屎蛋</span><br><span class="line">咖喱扒了妖王的胖次</span><br><span class="line">感谢三位浓浓的蛋</span><br><span class="line"></span><br><span class="line">好！已迷上门口的老头</span><br><span class="line">好！一起上帮老姨拔毛</span><br><span class="line">好！一缸奶我统统都吸干</span><br><span class="line">比利的妈妈撸爆蛋</span><br><span class="line">好！已迷上门口的老头</span><br><span class="line">好！一起上帮老姨拔毛</span><br><span class="line">好！一缸奶我统统都吸干</span><br><span class="line">比利的妈妈撸爆蛋</span><br><span class="line"></span><br><span class="line">辣妹儿，好</span><br><span class="line">法克儿，好</span><br><span class="line">法克儿，好，辣妹儿</span><br><span class="line">弄你弄你肛，弄你弄你肛，弄你弄你肛</span><br><span class="line">马得儿，马得儿，马得儿</span><br><span class="line">弄你弄你肛，马得儿</span><br><span class="line"></span><br><span class="line">你看，白森森的哥斯拉屎</span><br><span class="line">皮白，白森森的哥斯拉屎</span><br><span class="line">没得事去弄弄雪茄</span><br><span class="line">谁弄的毛肚刚刚到</span><br><span class="line"></span><br><span class="line">好！已迷上门口的老头</span><br><span class="line">好！一起上帮老姨拔毛</span><br><span class="line">好！一缸奶我统统都吸干</span><br><span class="line">比利的妈妈撸爆蛋</span><br><span class="line">好！已迷上门口的老头</span><br><span class="line">好！一起上帮老姨拔毛</span><br><span class="line">好！一缸奶我统统都吸干</span><br><span class="line">比利的妈妈撸爆蛋</span><br><span class="line"></span><br><span class="line">好！</span><br><span class="line">好！</span><br><span class="line">好！</span><br><span class="line">好！</span><br><span class="line">好！</span><br><span class="line">好！</span><br><span class="line"></span><br><span class="line">好！我已迷上门口的老头</span><br><span class="line">好！一起上帮老姨拔毛</span><br><span class="line">好！一缸奶我统统都吸干</span><br><span class="line">比利的妈妈撸爆蛋</span><br><span class="line">好！我已迷上门口的老头</span><br><span class="line">好！一起上帮老姨拔毛</span><br><span class="line">好！一缸奶我统统都吸干</span><br><span class="line">比利的妈妈撸爆蛋</span><br></pre></td></tr></table></figure></div></div></div>
+
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://makysdd.github.io/2020/04/get-black-and-white.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Makys">
+      <meta itemprop="description" content="世界那么大，我想去看看。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Makys的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/04/get-black-and-white.html" class="post-title-link" itemprop="url">在2020年4月4日如何进行黑白色盲体验</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发布</span>
+
+              <time title="创建时间：2020-04-04 12:38:52" itemprop="dateCreated datePublished" datetime="2020-04-04T12:38:52+08:00">2020-04-04</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新</span>
+                <time title="最后修改时间：2020-04-14 10:48:11" itemprop="dateModified" datetime="2020-04-14T10:48:11+08:00">2020-04-14</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2020/04/get-black-and-white.html" class="post-meta-item leancloud_visitors" data-flag-title="在2020年4月4日如何进行黑白色盲体验" title="阅读">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/04/get-black-and-white.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/04/get-black-and-white.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">字数：</span>
+              <span>554</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>2020年4月4日本来是个清明节，扫墓的日子，结果因为疫情，很多人牺牲了。于是呢，国家便在这个日子开展国家悼念活动。</p>
+<h2 id="手机（Android）"><a href="#手机（Android）" class="headerlink" title="手机（Android）"></a>手机（Android）</h2><p>因为我没有苹果手机，就不提供它的教程了，<del>反正大致步骤跟安卓瘟10一致</del></p>
+<p><a href="https://imgchr.com/i/GwHjc8" target="_blank" rel="noopener"><img data-src="https://s1.ax1x.com/2020/04/04/GwHjc8.md.jpg" alt="GwHjc8.md.jpg"></a></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/04/get-black-and-white.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://makysdd.github.io/2020/03/next-tag-help.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Makys">
+      <meta itemprop="description" content="世界那么大，我想去看看。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Makys的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/03/next-tag-help.html" class="post-title-link" itemprop="url">Hexo tag 的使用</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发布</span>
+
+              <time title="创建时间：2020-03-30 16:55:29" itemprop="dateCreated datePublished" datetime="2020-03-30T16:55:29+08:00">2020-03-30</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新</span>
+                <time title="最后修改时间：2020-04-21 08:25:54" itemprop="dateModified" datetime="2020-04-21T08:25:54+08:00">2020-04-21</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%BD%91%E7%AB%99%E7%AE%A1%E7%90%86/" itemprop="url" rel="index"><span itemprop="name">网站管理</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2020/03/next-tag-help.html" class="post-meta-item leancloud_visitors" data-flag-title="Hexo tag 的使用" title="阅读">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/03/next-tag-help.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/03/next-tag-help.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">字数：</span>
+              <span>1k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>目前使用的主题NEXT有一些tag<del>特异功能</del>。</p>
+<h2 id="展示"><a href="#展示" class="headerlink" title="展示"></a>展示</h2><h3 id="信息框"><a href="#信息框" class="headerlink" title="信息框"></a>信息框</h3><p><del>想起了mediawiki</del></p>
+<div class="note default">
+            <p>信息框的内容</p>
+          </div>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/03/next-tag-help.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://makysdd.github.io/2020/03/hello-world.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Makys">
+      <meta itemprop="description" content="世界那么大，我想去看看。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Makys的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/03/hello-world.html" class="post-title-link" itemprop="url">Hello World</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发布</span>
+
+              <time title="创建时间：2020-03-09 11:53:21" itemprop="dateCreated datePublished" datetime="2020-03-09T11:53:21+08:00">2020-03-09</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新</span>
+                <time title="最后修改时间：2020-04-14 10:47:47" itemprop="dateModified" datetime="2020-04-14T10:47:47+08:00">2020-04-14</time>
+              </span>
+
+          
+            <span id="/2020/03/hello-world.html" class="post-meta-item leancloud_visitors" data-flag-title="Hello World" title="阅读">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/03/hello-world.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/03/hello-world.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">字数：</span>
+              <span>357</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/03/hello-world.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+
+
+
+          </div>
+          
+
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-153163670-2');
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
 </script>
 
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Fira Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css">
-  
-    <link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/css/mdui.min.css">
-    <script src="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/js/mdui.min.js"></script>
-  
-  
-  
-  
-<meta name="generator" content="Hexo 4.2.0"></head>
-<body>
-<div id="page">
-<a href="javascript:;" class="popup-trigger"><i class="menu-item-icon fa fa-search fa-fw"></i></a>
-<div class="popup search-popup local-search-popup">
-  <div class="local-search-header clearfix">
-    <span class="search-icon">
-      <i class="fa fa-search"></i>
-    </span>
-    <span class="popup-btn-close">
-      <i class="fa fa-times-circle"></i>
-    </span>
-    <div class="local-search-input-wrapper">
-      <input autocomplete="off"
-             placeholder="Search..." spellcheck="false"
-             type="text" id="local-search-input">
-    </div>
-  </div>
-  <div id="local-search-result"></div>
-</div>
-
-<div id="lx-aside" style="background-image: url(//cdn.jsdelivr.net/npm/theme-lx@0.3.9/source/images/cover.jpeg)">
-  <div class="overlay">
-  <div class="featured">
-    <div class="avatar"><a href="/"><img src="//cdn.jsdelivr.net/npm/theme-lx@0.3.9/source/images/cover.jpeg"></a></div>
-    <span>Makys</span>
-    <h1>又一个Hexo网站</h1>
-    <span>——有待建设</span>
-    <div class="social-links">
-    <a href="https://github.com/makysdd" target="_blank"><i class="fa fa-github fa-fw"></i></a>
-    <a href="mailto:makysdd@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
-</div>
-  </div>
-  </div>
-</div>
-
-<div id="lx-main-content">
-  <div class="lx-post"> 
-
-  <div class="lx-entry padding">
-    <div>
-      <h2 class="title"><a href="/2020/04/get_b_and_w/">在2020年4月4日如何进行黑白色盲体验</a></h2>
-      <span class="lx-post-detail"><i class="fa fa-calendar-o"></i> 2020-04-04 | <i class="fa fa-folder-o"></i> <a class="category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a></span>
-      <p><p>2020年4月4日本来是个清明节，扫墓的日子，结果因为疫情，很多人牺牲了。于是呢，国家便在这个日子开展国家悼念活动。</p>
-<h2><span id="手机android">手机（Android）</span></h2><p>因为我没有苹果手机，就不提供它的教程了，<del>反正大致步骤跟安卓瘟10一致</del></p>
-<p><a href="https://imgchr.com/i/GwHjc8" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/04/GwHjc8.md.jpg" alt="GwHjc8.md.jpg"></a></p>
-<p>如上图。打开<strong>设置</strong>》<del>…(据手机而不同)…</del>》<strong>开发者模式</strong>》<strong>模拟颜色空间</strong>，选择全色盲</p>
-<p>好像安卓9以后有个什么深色模式，配合那个应该体验更佳。</p>
-<h2><span id="电脑windows10">电脑（Windows10）</span></h2><p><a href="https://imgchr.com/i/GwH2fx" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/04/GwH2fx.md.png" alt="GwH2fx.md.png"></a></p>
-<p>如上图。打开<strong>设置</strong>》<strong>轻松使用</strong>》<strong>颜色滤镜</strong>，把它打开，下面选择<strong>灰度</strong>。</p>
-<p>旧版Windows10应该是类似的操作。</p>
-<p>还可以开个深色模式。</p>
-<p><a href="https://imgchr.com/i/GwHWp6" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/04/04/GwHWp6.md.png" alt="GwHWp6.md.png"></a></p>
-<h2><span id="网页htmlcss">网页（Html+CSS）</span></h2><p><del>嘿嘿，这才是真正的技术性内容</del></p>
-<p>网页黑白非常简单，加个CSS就行。</p>
-<pre><code class="css">html {
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
-    -webkit-filter: grayscale(1);
-}</code></pre>
-<p>实测加在html和body都行。</p>
-</p>
-      <div class="post-button"><a class="btn" href="/2020/04/get_b_and_w/" rel="noopener"><i class="fa fa-angle-double-right fa-fw"></i>Read More</a></div>
-    </div>
-  </div>
-  <div class="lx-entry padding">
-    <div>
-      <h2 class="title"><a href="/2020/03/theme-help/">主题帮助</a></h2>
-      <span class="lx-post-detail"><i class="fa fa-calendar-o"></i> 2020-03-30 | <i class="fa fa-folder-o"></i> <a class="category-link" href="/categories/%E7%BD%91%E7%AB%99%E7%AE%A1%E7%90%86/">网站管理</a></span>
-      <p><p>目前使用的主题有一些<del>特异功能</del>。这里把特异功能罗列出来。</p>
-<h2><span id="信息框">信息框</span></h2><p><del>想起了mediawiki</del></p>
-<div class="note default">
-            <h3><span id="标题">标题</span></h3><p>内容</p>
-          </div>
-<pre><code>灰{%note default%}
-蓝{%note info%}
-紫{%note primary%}
-绿{%note success%}
-黄{%note warning%}
-红{%note danger%}
-{%endnote%}
-
-{%note default%}
-### 标题
-内容
-{%endnote%}</code></pre><h2><span id="label-tag累不塔基">Label tag<del>累不塔基</del></span></h2><span class="label default">山川</span><span class="label primary">异域</span>，<span class="label default">风月</span><span class="label success">同钉</span>。
-<span class="label info">岂曰</span><span class="label danger">无课</span>，<span class="label warning">与子</span><mark>同钉</mark>。
-<pre><code>{%label @山川%}{%label primary@异域%}，{%label default@风月%}{%label success@同钉%}。
-{%label info@岂曰%}{%label danger@无课%}，{%label warning@与子%}&lt;mark&gt;同钉&lt;/mark&gt;。</code></pre><h2><span id="按钮">按钮</span></h2><a class="btn" href="#url" title="title">按钮</a>
-<a class="btn" href="#url"><i class="fa fa-hand-o-right"></i>图标按钮</a>
-<a class="btn" href="#url"><i class="fa fa-hand-o-right fa-fw"></i>固定长度</a>
-<pre><code>{%btn #url,按钮,,title%}
-{%btn #url,图标按钮,hand-o-right%}
-{%btn #url,固定长度,hand-o-right fa-fw%}</code></pre><h2><span id="引语">引语</span></h2><blockquote class="blockquote-center"><p> 我实在没有说过这样一句话。<br><strong>——鲁迅</strong> </p>
-</blockquote>
-<pre><code>{%cq%} something {%endcq%}</code></pre><h2><span id="视频">视频</span></h2><pre><code>{% video url %}</code></pre></p>
-      <div class="post-button"><a class="btn" href="/2020/03/theme-help/" rel="noopener"><i class="fa fa-angle-double-right fa-fw"></i>Read More</a></div>
-    </div>
-  </div>
-  <div class="lx-entry padding">
-    <div>
-      <h2 class="title"><a href="/2020/03/study-hub/">学习资源仓库</a></h2>
-      <span class="lx-post-detail"><i class="fa fa-calendar-o"></i> 2020-03-10 | <i class="fa fa-folder-o"></i> <a class="category-link" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a></span>
-      <p><div class="note info">
-            <h3><span id="注意">注意</span></h3><p>这原来是一个网站，现在作为一个网站的文章呈现。该项目已停止，本页内容已失效。部分链接有效。</p>
-          </div>
-
-<p>此网站主要发布万州二中网课的学习资源及胶囊二维码。<strong>不是官方发布处。</strong></p>
-<h2><span id="直播课回放">直播课回放</span></h2><p>由于手机看直播回放时无法横屏，以及各种不爽还有有时化学冉某某讲的贼快还没有回放，所以我把直播课都录屏下来，上传到网上。可能是化学直播课有视频的缘故，有时化学直播在电脑上无法正常观看。有的化学回放的声音和图像是分开的，或只有两者之一。</p>
-<hr>
-<h4><span id="物理">【物理】</span></h4><p>物理在b站的直播有官方录播。<a href="https://space.bilibili.com/391912241/" target="_blank" rel="noopener">点我</a></p>
-<hr>
-<h4><span id="物理以外">【物理以外】</span></h4><p><a href="https://www.lanzous.com/b00z86wfc" target="_blank" rel="noopener">我</a></p>
-<p>密码：cxp4</p>
-<p><b>需要注意的是</b>，由于蓝奏云的限制，mp4文件被压缩为了zip文件。如果你只有手机并且打不开zip文件，请<a href="https://www.coolapk.com/apk/com.estrongs.android.pop" target="_blank" rel="noopener">下载这个app</a>。</p>
-<h2><span id="电子书">电子书</span></h2><p>电子书只发布<del>我认为</del>最重要的几本，如果要其他的书请联系我。</p>
-<p><a href="https://www.lanzous.com/b00z7pofc" target="_blank" rel="noopener">点击这里</a></p>
-<p>密码：94d0</p>
-<h2><span id="支持我">支持我</span></h2><p>如果觉得这个网站很有用，就把他分享给别人吧！</p>
-</p>
-      <div class="post-button"><a class="btn" href="/2020/03/study-hub/" rel="noopener"><i class="fa fa-angle-double-right fa-fw"></i>Read More</a></div>
-    </div>
-  </div>
-  <div class="lx-entry padding">
-    <div>
-      <h2 class="title"><a href="/2020/03/hello-world/">Hello World</a></h2>
-      <span class="lx-post-detail"><i class="fa fa-calendar-o"></i> 2020-03-09</span>
-      <p><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2><span id="quick-start">Quick Start</span></h2><h3><span id="create-a-new-post">Create a new post</span></h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3><span id="run-server">Run server</span></h3><pre><code class="bash">$ hexo server</code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3><span id="generate-static-files">Generate static files</span></h3><pre><code class="bash">$ hexo generate</code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3><span id="deploy-to-remote-sites">Deploy to remote sites</span></h3><pre><code class="bash">$ hexo deploy</code></pre>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-</p>
-      <div class="post-button"><a class="btn" href="/2020/03/hello-world/" rel="noopener"><i class="fa fa-angle-double-right fa-fw"></i>Read More</a></div>
-    </div>
-  </div>
-
-
-
-
-<footer>
-  <div>
-  Copyright &copy; 2019.<a href="/">又一个Hexo网站</a><br>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme <a href="https://lx.js.org" target="_blank">Lx</a><br>
-  </div>
-</footer>
-
-  </div>
-</div>
-</div>
-
-<button class="hamburger hamburger--arrow-r" type="button">
-    <div class="hamburger-box">
-      <div class="hamburger-inner"></div>
-    </div>
-</button> 
-<div class="menu visibility">
-  <div class="menu-head">
-    <span class="layer">
-      <div class="col">
-        <div class="row for-pic">
-          <div class="profile-pic">
-            <a href="/"><img src="//cdn.jsdelivr.net/npm/theme-lx@0.3.9/source/images/cover.jpeg" alt="Makys"/></a>
-          </div>
         </div>
-        <div class="row for-name">
-          <p>Makys</p>
-          <span class="tagline">Hello, World!</span>
-        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章
+        </li>
+        <li class="sidebar-nav-overview">
+          网站
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
       </div>
-    </span>
-  </div>
-  <nav class="menu-container">
-  <ul class="menu-items">
-    <li><a href="/"><i class="fa fa-home fa-fw"></i>Home</a></li>
-    <li><a href="/archives/"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
-    <li class="has-sub"><span class="dropdown-heading">
-      <i class="fa fa-th-list fa-fw"></i>Categories</span>
-        <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BD%91%E7%AB%99%E7%AE%A1%E7%90%86/">网站管理</a></li></ul>
-    </li>
-    <li class="has-sub"><span class="dropdown-heading">
-      <i class="fa fa-bookmark fa-fw"></i>Pages</span>
-        <ul>
-          <li><a href="/guestbook/">Guestbook</a></li>
-        <li><a href="/about/">About</a></li>
-        </ul>
-    </li>
-    <li class="has-sub"><span class="dropdown-heading">
-      <i class="fa fa-link fa-fw"></i>Friends</span>
-        <ul>
-          <li> <a href="https://lx.js.org" target="_blank">Theme-Lx</a></li>
-        </ul>
-    </li>
-  </ul>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Makys"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">Makys</p>
+  <div class="site-description" itemprop="description">世界那么大，我想去看看。</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
   </nav>
 </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="/link" title="QQ → link"><i class="fab fa-qq fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/link" title="Wechat → link"><i class="fab fa-weixin fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/about/" title="Zhihu → &#x2F;about&#x2F;"><i class="fab fa-zhihu fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/about/" title="Weibo → &#x2F;about&#x2F;"><i class="fab fa-weibo fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:makysdd@gmail.com" title="E-Mail → mailto:makysdd@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/sitemap.xml" title="sitemap → &#x2F;sitemap.xml"><i class="fa fa-sitemap fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-rss fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://github.com/makysdd" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;makysdd" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/about/" title="Wikipedia → &#x2F;about&#x2F;"><i class="fab fa-wikipedia-w fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.quora.com/profile/Makys-Chinese" title="Quora → https:&#x2F;&#x2F;www.quora.com&#x2F;profile&#x2F;Makys-Chinese" rel="noopener" target="_blank"><i class="fab fa-quora fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.instagram.com/makysdd/" title="Instagram → https:&#x2F;&#x2F;www.instagram.com&#x2F;makysdd&#x2F;" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/makys" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;makys" rel="noopener" target="_blank"><i class="fab fa-twitter fa-fw"></i></a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by.svg" alt="Creative Commons"></a>
+  </div>
 
-<div class="gototop js-top">
-  <a href="#" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
+
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2019 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Makys</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">4k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">4 分钟</span>
 </div>
-<script src="//cdn.jsdelivr.net/npm/theme-lx@0.3.9/source/js/jquery.easing.min.js"></script>
-<script>
-(function () {
-	"use strict";
-	var goToTop = function() {
-		$(".js-gotop").on("click", function(event){
-			event.preventDefault();
-			$("html, body").animate({
-				scrollTop: $("html").offset().top
-			}, 500, "easeInOutExpo");
-			return false;
-		});
-		$(window).scroll(function(){
-			var $win = $(window);
-			if ($win.scrollTop() > 200) {
-				$(".js-top").addClass("active");
-			} else {
-				$(".js-top").removeClass("active");
-			}
-		});
-	};
-	$(function(){
-		goToTop();
-	});
-}());
-</script>
-<script src="//cdn.jsdelivr.net/npm/theme-lx@0.3.9/source/js/local.search.js"></script>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
 
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'AjOnywucsdTUbOgUiiYa9pQN-MdYXbMMI',
+      appKey     : 'WuTsdWAee7gJ2ai5XVCFaBuU',
+      placeholder: "欢迎评论",
+      avatar     : 'identicon',
+      meta       : guest,
+      pageSize   : '5' || 10,
+      visitor    : true,
+      lang       : 'zh-cn' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : true,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
 
 </body>
 </html>

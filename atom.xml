@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://makysdd.github.io/"/>
-  <updated>2020-04-14T02:48:59.948Z</updated>
+  <updated>2020-04-25T07:14:32.333Z</updated>
   <id>http://makysdd.github.io/</id>
   
   <author>
@@ -21,24 +21,23 @@
     <link href="http://makysdd.github.io/2020/04/misheard-dejavu.html"/>
     <id>http://makysdd.github.io/2020/04/misheard-dejavu.html</id>
     <published>2020-04-07T02:35:49.000Z</published>
-    <updated>2020-04-14T02:48:59.948Z</updated>
+    <updated>2020-04-25T07:14:32.333Z</updated>
     
     <summary type="html">
     
-      &lt;div class=&quot;note&quot;&gt;
-    &lt;p&gt;
-        &lt;span&gt;Bilibili视频：&lt;/span&gt;&lt;span&gt;BV18t411D7bT&lt;/span&gt;
-	&lt;br&gt;
-        &lt;a class=&quot;btn&quot; href=&quot;javascript:BV18t411D7bT();&quot;&gt;博客内观看&lt;/a&gt;
-        &lt;a class=&quot;btn&quot; href=&quot;//www.bilibili.com/video/BV18t411D7bT&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Bilibili观看&lt;/a&gt;
-	&lt;br&gt;
-        Bilibili视频块仍在完善，目前我更推荐用Bilibili观看。
-    &lt;/p&gt;
-    &lt;div id=&quot;BV18t411D7bT&quot; style=&quot;&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;script&gt;function BV18t411D7bT(){
-	document.getElementById(&quot;BV18t411D7bT&quot;).innerHTML =&quot;&lt;iframe src=\&quot;//player.bilibili.com/player.html?bvid=BV18t411D7bT&amp;page=1\&quot; scrolling=\&quot;no\&quot; border=\&quot;0\&quot; frameborder=\&quot;no\&quot; framespacing=\&quot;0\&quot; allowfullscreen=\&quot;true\&quot; style=\&quot;height=500px;\&quot;&gt;&lt;/iframe&gt;&quot;;
-}&lt;/script&gt;
+      &lt;ul class=&quot;post-copyright&quot; style=&quot;border-left:3px solid #0dcfff&quot;&gt;
+            &lt;li class=&quot;post-copyright-postend&quot;&gt;
+                &lt;span&gt;&lt;strong&gt;Bilibili视频：&lt;/strong&gt;&lt;/span&gt;&lt;span&gt;BV18t411D7bT&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;post-copyright-link&quot;&gt;
+                &lt;a class=&quot;btn&quot; href=&quot;javascript:BV18t411D7bT();&quot;&gt;博客内观看&lt;/a&gt;
+                &lt;a class=&quot;btn&quot; href=&quot;//www.bilibili.com/video/BV18t411D7bT&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;到Bilibili观看&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;div id=&quot;BV18t411D7bT&quot; style=&quot;&quot;&gt;&lt;/div&gt;
+        &lt;/ul&gt;
+        &lt;script&gt;function BV18t411D7bT(){
+            document.getElementById(&quot;BV18t411D7bT&quot;).innerHTML =&quot;&lt;iframe src=\&quot;//player.bilibili.com/player.html?bvid=BV18t411D7bT&amp;page=1\&quot; scrolling=\&quot;no\&quot; border=\&quot;0\&quot; frameborder=\&quot;no\&quot; framespacing=\&quot;0\&quot; allowfullscreen=\&quot;true\&quot; style=\&quot;min-width:1000px;min-height:600px\&quot;&gt;&lt;/iframe&gt;&quot;;
+        }&lt;/script&gt;
     
     </summary>
     
@@ -57,11 +56,36 @@
   </entry>
   
   <entry>
+    <title>Next主题：制作bilibilivideo标签</title>
+    <link href="http://makysdd.github.io/2020/04/next-create-bilibili-tag.html"/>
+    <id>http://makysdd.github.io/2020/04/next-create-bilibili-tag.html</id>
+    <published>2020-04-06T07:03:00.000Z</published>
+    <updated>2020-04-25T07:11:20.802Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;壹&quot;&gt;&lt;a href=&quot;#壹&quot; class=&quot;headerlink&quot; title=&quot;壹&quot;&gt;&lt;/a&gt;壹&lt;/h2&gt;&lt;p&gt;Next主题自带了一个video标签插件，只要有视频链接就可以在博客里放视频。&lt;del&gt;然而现在还有几时用得到视频直链&lt;/del&gt;为了让视频插件更实用，我决定自己做一个bilibili视频插件。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Next主题" scheme="http://makysdd.github.io/categories/Next%E4%B8%BB%E9%A2%98/"/>
+    
+      <category term="Bilibili" scheme="http://makysdd.github.io/categories/Bilibili/"/>
+    
+      <category term="编程" scheme="http://makysdd.github.io/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="前端" scheme="http://makysdd.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Hop空耳</title>
     <link href="http://makysdd.github.io/2020/04/misheard-hop.html"/>
     <id>http://makysdd.github.io/2020/04/misheard-hop.html</id>
     <published>2020-04-06T04:39:49.000Z</published>
-    <updated>2020-04-21T00:26:41.242Z</updated>
+    <updated>2020-04-25T07:14:20.768Z</updated>
     
     <summary type="html">
     
@@ -92,7 +116,7 @@
     <link href="http://makysdd.github.io/2020/04/get-black-and-white.html"/>
     <id>http://makysdd.github.io/2020/04/get-black-and-white.html</id>
     <published>2020-04-04T04:38:52.000Z</published>
-    <updated>2020-04-14T02:48:11.429Z</updated>
+    <updated>2020-04-14T10:51:25.972Z</updated>
     
     <summary type="html">
     
@@ -117,7 +141,7 @@
     <link href="http://makysdd.github.io/2020/03/next-tag-help.html"/>
     <id>http://makysdd.github.io/2020/03/next-tag-help.html</id>
     <published>2020-03-30T08:55:29.000Z</published>
-    <updated>2020-04-21T00:25:54.553Z</updated>
+    <updated>2020-04-25T07:14:01.574Z</updated>
     
     <summary type="html">
     
